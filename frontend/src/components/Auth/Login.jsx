@@ -68,7 +68,7 @@ const Login = () => {
                   type='email'
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder='abhay1392@gmail.com'
+                  placeholder='abc@gmail.com'
                 />
                 <MdOutlineMailOutline />
               </div>
