@@ -71,6 +71,10 @@ git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
 git push -u origin main
 ```
 
+## Deployment (quick pointers)
+- Frontend (Netlify/Vercel): build command `npm run build`, publish directory `frontend/dist`. Set the project root to `frontend/`.
+- Backend (Render): create a Web Service from `backend/` with `Build Command: npm ci` and `Start Command: npm start`. Add environment variables from `backend/config/config.env`.
+
 ## Troubleshooting
 - If the login page looks tiny, update to latest; fixed widths were replaced with responsive styles in `frontend/src/App.css`.
 - If cookies don’t set in browser, verify `FRONTEND_URL` and `withCredentials: true` in API calls.
