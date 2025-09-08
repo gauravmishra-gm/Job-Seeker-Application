@@ -72,8 +72,11 @@ git push -u origin main
 ```
 
 ## Deployment (quick pointers)
-- Frontend (Netlify/Vercel): build command `npm run build`, publish directory `frontend/dist`. Set the project root to `frontend/`.
+- Frontend (Netlify/Vercel): build command `npm run build`, publish directory `frontend/dist`. Set the project root to `frontend/`. A basic Netlify config is provided in `netlify.toml`.
 - Backend (Render): create a Web Service from `backend/` with `Build Command: npm ci` and `Start Command: npm start`. Add environment variables from `backend/config/config.env`.
+
+### Render one‑click (optional)
+Use `render.yaml` as a blueprint. In Render dashboard → Blueprints, connect your repo and it will pick up the service.
 
 ## Troubleshooting
 - If the login page looks tiny, update to latest; fixed widths were replaced with responsive styles in `frontend/src/App.css`.
